@@ -10,3 +10,45 @@ html {
     font-family: 'Inter', Arial, sans-serif;
 }
 
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+
+/*----------------------------------------*/
+/*Main                                    */
+/*----------------------------------------*/
+
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+    overflow: hidden; 
+    text-align: center;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .container {
+    position: fixed;
+    bottom: 50%;
+    color: #f1f1f1;
+    width: 600px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .about-me {
+    font-size: 18px;
+    margin-top: 15px;
+  }
