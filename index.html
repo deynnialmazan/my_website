@@ -6,6 +6,7 @@
         <meta name="description" content="My portfolio">
         <meta name="keywords" content="html, css, web, web development, seo">
         <title>Deynni Almazan's Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -15,22 +16,50 @@
     </head>
     <body>
         <main>
-            <video autoplay muted loop id="video-background">
-                <source src="./assets/image/background-107430.mp4" type="video/mp4">
-            </video>
+            <header>
             <div class="container">
-                <section class="introduction">
-                        <div class="title">
-                          <h1>Hello! I'm Deynni</h1>
-                        </div>
-                    
-                        <div class="about-me">
-                            <p>I'm an Industrial Engineer, and Logistics Management and 
-                                Manufacturing Engineer.</p>
-                            <p>Currently, I am student
-                                of Software Developer in Winnipeg, Canada.</p>
-                        </div>  
+                <nav>
+                    <ul>
+                        <li><a href="./aboutme.html">Home</a></li>
+                        <li><a href="./aboutme.html">About me</a></li>
+                        <li><a href="./contactme.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            </div>
+            <section class="home">
+                <div class="container">
+                    <h1>Hello! I'm <span id="name">Deynni Almazan</span></h1>
+                    <h3>I am a student of Software Developer in Winnipeg, Canada.</h3>
+                </div>
+            </section>
+
+                <section class="about-me">
+                    <p>I am an Industrial and Systems Engineer, and a Manufacturing 
+                    and Logistics Management Engineer, with professional experience 
+                    in internal and external quality audits.</p>
+                    <p>Passionate about technology and innovation. Skilled in 
+                    teamwork, leadership, problem-solving, and process analysis.</p> 
+                    <p>Currently, I am a learning about HTML, CSS, JavaScript,
+                        and others programming languages.</p> 
                 </section>
+
+                <section class="contact-me">
+                    <nav>
+                        <a href="https://twitter.com/deynnialmazan" target="_blank">
+                            <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dey.amonroy/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/drosby.a" target="_blank">
+                            <i class="fa-brands fa-facebook"></i></a>
+                    </nav>
+
+                </section>
+                
+            <footer> 
+                    <p id="name"> &copy2023 Deynni Almazan</p>
+                </div> 
+            </footer>
             </div>
         </main>
     </body>
