@@ -2,17 +2,17 @@
 
 const hamburguerIcon = document.querySelector('.h-icon');
 const menu = document.querySelector('.menu-header');
-const menuItems = document.querySelectorAll(".menuItem");
-const closeIcon= document.querySelector(".close-icon");
-const menuIcon = document.querySelector(".menuIcon");
+const menuItems = document.querySelectorAll('.menu-items');
 
 let statusIcon= 'hide';
 hamburguerIcon.addEventListener('click', () => {
-    if (statusIcon='hide') {
+    if (statusIcon ==='hide') {
         menu.style.display= 'block';
-        statusIcon.valueOf = 'show';
-    } else if (statusIcon = 'show') {
+        statusIcon = 'show';
+    } else if (statusIcon === 'show') {
         menu.style.display= 'none';
+        statusIcon = 'hide';
     }
 });
-        
+
+
