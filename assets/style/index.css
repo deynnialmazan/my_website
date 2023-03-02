@@ -306,11 +306,15 @@ footer {
     min-width: 40%;
     border-radius: 20px;
   }
+  
+  .name-header {
+    font-size: 14px;
+  }
 }
 
 
 @media (max-width: 480px) {
   .name-header {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
