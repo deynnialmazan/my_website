@@ -66,6 +66,14 @@ nav ul li + li {
   display: none;
   line-height: 50px;
   font-size: 28px;
+  cursor: pointer;
+}
+
+.close-icon {
+  display: none;
+  line-height: 50px;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -73,6 +81,9 @@ nav ul li {
   line-height: 50px;  
 }
 
+.showMenu {
+  transform: translateY(0);
+}
 
 /*----------------------------------------*/
 /*Main                                    */
@@ -212,10 +223,6 @@ hr {
   margin-bottom: 15px;
 }
 
-image:hover {
-  color: var(--app-yellow-hover);
-  
-}
 
 nav i {
   color: var(--app-gray-title);
@@ -243,4 +250,67 @@ footer {
 
 #footer {
   font-size: 18px;
+}
+
+
+[data-animation-offset] {
+  animation: trans 0.5s ease-in ;
+}
+
+[data-animation-offset="first"] { animation-delay: 0.1s;}
+[data-animation-offset="second"] { animation-delay: 0.3s;}
+[data-animation-offset="third"] { animation-delay: 0.5s;}
+
+@keyframes trans {
+  from {
+      opacity: 0;
+      translate: 0 -10px;
+      
+  } to {
+      opacity: 3;
+      translate: 0 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu-header{
+      display: none;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .h-icon {
+      display: block;
+      transition: color 0.25s ease-in-out;
+      color: var(--app-orange-text);
+  }
+
+  .h-icon:hover {
+      color: var(--app-yellow-hover)
+  }
+
+  .name-header {
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+  
+  nav ul li a:hover {
+    font-size: 13px;
+  }
+
+  .computer {
+    min-width: 40%;
+    border-radius: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .name-header {
+    font-size: 16px;
+  }
 }

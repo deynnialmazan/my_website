@@ -12,28 +12,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
         <link rel="shorcut icon" href="./assets/image/favicon-32x32.png" type="image/S-icon">
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
-        <script src="./assets/script/index.js" defer></script>
+        <script src="./assets/style/index.js" defer></script>
     </head>
     <body>
         <main>
             <header>
-            <div class="container">
-                <div class="header">
-                    <h3 class="name-header">Deynni Almazan</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#about-me">About me</a></li>
-                        <li><a href="#contact-me">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="container">
+                    <div class="header">
+                        <h3 class="name-header">Deynni Almazan</h3>
+                        <nav class="menu-header">
+                            <ul>
+                                <li><a href="#top">Home</a></li>
+                                <li><a href="#about-me">About me</a></li>
+                                <li><a href="#contact-me">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="h-icon"><i class="fas fa-bars"></i></div>
+                        <div class="close-icon"><i class="fa-duotone fa-xmark-large"></i></i></div>
+                    </div>
+                </div>
             </header>
-            </div>
             <section class="home">
                 <div class="container">
-                    <h1>Hello! I'm <span id="name">Deynni Almazan</span></h1>
-                    <h3>I am a student of Software Developer in Winnipeg, Canada.</h3>
+                    <div class="animation one" data-animation-offset="first"> 
+                        <h1>Hello! I'm <span id="name">Deynni Almazan</span></h1>
+                    </div>
+                    <div class="animation two" data-animation-offset="second"> 
+                        <h3>
+                            I am a student of Software Developer in Winnipeg, Canada.
+                        </h3>
+                    </div>
                 </div>
             </section>
             <section class="about-me" id="about-me">
@@ -42,15 +50,22 @@
                     <picture class="one">
                         <img class="computer" src="./assets/image/computer2.jpg">
                     </picture>
-                    <p>Hello! I'm from Honduras. I am an Industrial and Systems
-                    Engineer, and a Manufacturing and Logistics Management 
-                    Engineer with professional experience in quality management.</p>
-                    <p>I am passionate about technology and innovation. Skilled in 
-                    teamwork, leadership, problem-solving, and process analysis.</p> 
-                    <p>Currently, I am studying Software Development, and 
+                    <p>
+                        Hello! I'm from Honduras. I am an Industrial and Systems
+                        Engineer, and a Manufacturing and Logistics Management 
+                        Engineer with professional experience in quality 
+                        management.
+                     </p>
+                    <p>
+                        I am passionate about technology and innovation. Skilled 
+                        in teamwork, leadership, problem-solving, and process 
+                        analysis.</p> 
+                    <p>
+                        Currently, I am studying Software Development, and 
                         learning about HTML, CSS, JavaScript, and others 
                         programming languages. If you want to know more about my 
-                        projects, feel free to contact me. </p>
+                        projects, feel free to contact me. 
+                    </p>
                     <p>Thanks for visiting! </p>
                 </div>
             </section>
@@ -86,10 +101,8 @@
                 </div>
             </section>
             <footer> 
-                    <p id="footer"> &copy2023 Deynni Almazan</p>
-                </div> 
+                    <p id="footer"> &copy2023 Deynni Almazan</p> 
             </footer>
-            </div>
         </main>
     </body>
 </html>
