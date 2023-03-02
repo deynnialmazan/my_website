@@ -18,4 +18,3 @@ hamburguerIcon.addEventListener('click', () => {
     }
 });
 
-
